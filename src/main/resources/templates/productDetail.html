@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 테스트</title>
+</head>
+<body>
+<h1>상품 상세 조회</h1>
+<table border="1">
+  <th>상품 번호</th>
+  <th>상품 이름</th>
+  <th>상품 가격</th>
+  <th>등록 날짜</th>
+  <th>수정 날짜</th>
+  <tr>
+    <td th:text="${product.productNo}"></td>
+    <td th:text="${product.productName}"></td>
+    <td th:text="${product.salePrice}"></td>
+    <td th:text="${product.registerYmdt}"></td>
+    <td th:text="${product.updateYmdt}"></td>
+  </tr>
+</table>
+</body>
+</html>
